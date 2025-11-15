@@ -1,4 +1,4 @@
-# ResNet-18 Image Classification Demo
+# ResNet-18 Image Classification
 
 Small PyTorch script that uses a **pre-trained ResNet-18** model to classify images into **ImageNet-1K classes**.
 
