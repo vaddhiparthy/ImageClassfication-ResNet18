@@ -1,14 +1,18 @@
-# ImageClassfication
+# ResNet-18 Image Classification Demo
 
-## PyTorch Image Classification with a Pre-Trained ResNet-18 Model
-## Overview
-This code demonstrates how to use PyTorch to classify images using a pre-trained ResNet-18 model. The model is loaded from the PyTorch model zoo and is applied to a sample image to predict its class label.
+Small PyTorch script that uses a **pre-trained ResNet-18** model to classify images into **ImageNet-1K classes**.
 
-### Dependencies
-This code requires the following dependencies:
-PyTorch
-torchvision
-Pillow
+## What it does
 
-### Usage
-To classify an image, simply run the following command:
+- Loads a local image (e.g. `cat.jpg`).
+- Applies standard ImageNet preprocessing.
+- Runs it through `torchvision.models.resnet18` with pretrained weights.
+- Prints the **top-k predicted classes** and probabilities.
+
+## Files
+
+```text
+.
+├─ resnet_infer.py        # main script
+├─ cat.jpg                # example image (not included here)
+└─ imagenet_labels.json   # optional labels file (if not using weights.meta)
